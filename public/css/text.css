@@ -1,0 +1,81 @@
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(-45deg, rgb(235, 112, 110), rgb(231, 82, 181), rgb(26, 132, 219), rgb(135, 17, 198));
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 10s ease infinite;
+  display: inline-block;
+      font-size: 80px;
+}
+
+@keyframes textclip {
+    from{
+		bottom: 0;
+	}
+	to{
+		background-position: 200% center;
+	}
+}
+
+/* PORJECTS */
+.content {
+  position: relative;
+  padding-left: 50%;
+  padding-top:15%;
+  padding-bottom: 5%;
+}
+
+.content h2 {
+  color: #fff;
+  font-size: 6em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px rgb(231, 82, 181);
+}
+
+.content h2:nth-child(2) {
+  color: rgb(231, 82, 181);
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
