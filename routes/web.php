@@ -29,9 +29,3 @@ Route::get('/', function(Projects $projects, Skill $skill){
         'skills'=> Skill::all()
     ]);
 });
-
-// Route::get('/', [SkillController::class, 'index']);
-// Route::get('/', [ProjectsController::class, 'index']);
-
-
-
